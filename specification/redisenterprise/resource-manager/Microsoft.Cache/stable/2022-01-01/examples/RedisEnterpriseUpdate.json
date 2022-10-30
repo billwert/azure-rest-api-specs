@@ -38,16 +38,21 @@
         },
         "properties": {
           "hostName": "cache1.westus.something.azure.com",
-          "provisioningState": "Updating",
-          "resourceState": "Updating",
+          "provisioningState": "Succeeded",
+          "resourceState": "Running",
           "redisVersion": "5",
           "minimumTlsVersion": "1.2"
         }
+      },
+      "headers": {
+        "Azure-AsyncOperation": "https://management.azure.com/subscriptions/subid/providers/Microsoft.Cache/...pathToOperationStatus..."
       }
     },
     "202": {
-      "Azure-AsyncOperation": "https://management.azure.com/subscriptions/subid/providers/Microsoft.Cache/...pathToOperationStatus...",
-      "Location": "https://management.azure.com/subscriptions/subid/providers/Microsoft.Cache/...pathToOperationResult..."
+      "headers": {
+        "Azure-AsyncOperation": "https://management.azure.com/subscriptions/subid/providers/Microsoft.Cache/...pathToOperationStatus...",
+        "Location": "https://management.azure.com/subscriptions/subid/providers/Microsoft.Cache/...pathToOperationResult..."
+      }
     }
   }
 }
