@@ -27,3 +27,12 @@ options:
     package-dir: Azure.Messaging.EventGridV2
     model-namespace: false
     namespace: Azure.Messaging.EventGrid.Namespaces
+  "@azure-tools/typespec-java":
+    emitter-output-dir: "{project-root}/.."
+    namespace: "com.azure.messaging.eventgrid"
+    service-name: "EventGrid Messaging"
+    partial-update: true
+    namer: true
+    generate-samples: false
+    generate-tests: false
+    enable-sync-stack: true
